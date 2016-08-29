@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference android:title="Username"
+        android:key="username"
+        android:summary="Please provide your username"></EditTextPreference>
+    <EditTextPreference
+        android:key="password"
+        android:title="Password"
+        android:summary="Enter your password here"
+        android:inputType="textPassword" />
+    <EditTextPreference android:title="Wifi name"
+        android:key="wifiname"
+        android:defaultValue="mm2010"
+        android:summary="NAIST wifi name"></EditTextPreference>
+</PreferenceScreen>
