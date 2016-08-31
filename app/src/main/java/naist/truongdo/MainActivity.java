@@ -151,11 +151,6 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected String doInBackground(String... params) {
-            try {
-                Thread.sleep(500);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
             return sendPost("https://aruba.naist.jp/cgi-bin/login", m1);
         }
 
@@ -192,9 +187,9 @@ public class MainActivity extends AppCompatActivity {
             outputStreamWriter.write(params.toString());
             outputStreamWriter.flush();
             int responseCode = con.getResponseCode();
-            System.out.println("\nSending 'POST' request to URL : " + url);
+            /*System.out.println("\nSending 'POST' request to URL : " + url);
             System.out.println("Post parameters : " + params);
-            System.out.println("Response Code : " + responseCode);
+            System.out.println("Response Code : " + responseCode);*/
 
             try{
                 BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
